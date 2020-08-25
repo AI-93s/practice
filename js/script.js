@@ -6,10 +6,12 @@
 //     isMarried: false
 // };
 
-// console.log(obj.name); 
+// console.log(obj.name);
 
-// let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];
-// console.log(arr[2]); 
+// let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {},
+//     []
+// ];
+// console.log(arr[2]);
 
 // Lesson 007
 
@@ -21,14 +23,14 @@
 // const answer = +prompt("Вам есть 18?", "18");
 // console.log(answer + 5);
 
-// const answers = [];  
+// const answers = [];
 
 // answers[0] = prompt('Как ваше имя?', '');
 // answers[1] = prompt('Как ваша фамалия?', '');
 // answers[2] = prompt('Сколько вам лет?', '');
 
-// console.log(typeof(answers));
-// console.log(typeof(null));
+// console.log(typeof (answers));
+// console.log(typeof (null));
 
 // Lesson 008
 
@@ -62,7 +64,7 @@
 // // ||
 
 // const isChecked = false,
-//       isClose = false;
+//     isClose = false;
 
 // console.log(isChecked || !isClose);
 
@@ -146,3 +148,37 @@
 // }
 
 // Lesson 015
+
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+// const personaMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+
+// };
+
+// for (let i = 0; i < 2; i++) {
+//     let a = prompt('Один из последних просмотренных фильмов?', ''),
+//         b = prompt('На сколько оцените его?', '');
+//     if (a != null && a != '' && a.length < 50 &&
+//         b != null && b != '' && b.length < 50) {
+//         personaMovieDB.movies[a] = b;
+//     } else {
+//         alert("Ошибка");
+//         i--;
+//     }
+// }
+
+// if (personaMovieDB.count < 10) {
+//     alert("Просмотрено довольно мало фильмов");
+// } else if (personaMovieDB.count >= 10 && personaMovieDB.count < 30) {
+//     alert("Вы классический зритель");
+// } else if (personaMovieDB.count >= 30) {
+//     alert("Вы киноман");
+// } else {
+//     alert("Произошла ошибка");
+// }
+// console.log(personaMovieDB);
