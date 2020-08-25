@@ -244,9 +244,79 @@
 
 // console.log(logg.substr(6, 5));
 
-const num = 12.2;
-console.log(Math.round(num));
+// const num = 12.2;
+// console.log(Math.round(num));
 
-const test = "12.2px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
+// const test = "12.2px";
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+// Lesson 018
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+    }
+}
+
+const personaMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+
+};
+
+function rememberMyFilms() {
+    for (let i = 0; i < 2; i++) {
+        let a = prompt('Один из последних просмотренных фильмов?', ''),
+            b = prompt('На сколько оцените его?', '');
+        if (a != null && a != '' && a.length < 50 &&
+            b != null && b != '' && b.length < 50) {
+            personaMovieDB.movies[a] = b;
+        } else {
+            alert("Ошибка");
+            i--;
+        }
+    }
+}
+
+rememberMyFilms();
+
+function detectPersonalLevel() {
+    if (personaMovieDB.count < 10) {
+        alert("Просмотрено довольно мало фильмов");
+    } else if (personaMovieDB.count >= 10 && personaMovieDB.count < 30) {
+        alert("Вы классический зритель");
+    } else if (personaMovieDB.count >= 30) {
+        alert("Вы киноман");
+    } else {
+        alert("Произошла ошибка");
+    }
+}
+
+detectPersonalLevel();
+
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personaMovieDB);
+    }
+}
+
+function writeYourGenres() {
+    for (let i = 1; i < 4; i++) {
+        personaMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}?`);
+    }
+
+}
+
+writeYourGenres();
+
+showMyDB(personaMovieDB.privat);
+
+console.log(personaMovieDB);
