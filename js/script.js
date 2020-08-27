@@ -634,49 +634,75 @@
 
 // Lesson 026
 
-//1
-console.log(typeof(String(null)));
-console.log(typeof(String(4)));
+// //1
+// console.log(typeof(String(null)));
+// console.log(typeof(String(4)));
 
-//2
-console.log(typeof(5 + ''));
+// //2
+// console.log(typeof(5 + ''));
 
-const num = 5;
+// const num = 5;
 
-console.log("htttps://vk.com/catalog/" + num);
+// console.log("htttps://vk.com/catalog/" + num);
 
-const fontSize = 26 + 'px';
+// const fontSize = 26 + 'px';
 
-//1
-console.log(typeof(Number('4')));
+// //1
+// console.log(typeof(Number('4')));
 
-//2
-console.log(typeof(+'5'));
+// //2
+// console.log(typeof(+'5'));
 
-//3
-console.log(typeof(parseInt("15px", 10)));
+// //3
+// console.log(typeof(parseInt("15px", 10)));
 
-let answ = +prompt("Hello", "");
+// let answ = +prompt("Hello", "");
 
-//1
+// //1
 
-// 0, '', null, undefined, NaN;
+// // 0, '', null, undefined, NaN;
 
-let switcher = null;
+// let switcher = null;
 
-if (switcher) {
-    console.log('Working...');
-}
+// if (switcher) {
+//     console.log('Working...');
+// }
 
-switcher = 1;
+// switcher = 1;
 
-if (switcher) {
-    console.log('Working...');
-}
+// if (switcher) {
+//     console.log('Working...');
+// }
 
-//2
-console.log(typeof(Boolean('4')));
+// //2
+// console.log(typeof(Boolean('4')));
 
-//3
-console.log(typeof(!!"ssss"));
+// //3
+// console.log(typeof(!!"ssss"));
+
+// Lesson 027
+
+// let x = 5; alert( x++ ); = 5
+
+// [] + false - null + true; = NaN
+
+// let y = 1; let x = y = 2; alert(x); = 2
+
+// [] + 1 + 2; = "12"
+
+// alert( "1"[0] ); = "1"
+
+// 2 && 1 && null && 0 && undefined; = null
+
+// !!( a && b ) и (a && b); = false
+
+// alert( null || 2 && 3 || 4 ); = 3
+
+// a = [1, 2, 3]; b = [1, 2, 3]; = false
+
+// alert( +"Infinity" ); = Infinity
+
+// "Ёжик" > "яблоко"; = false
+
+// 0 || "" || 2 || undefined || true || falsе; = 2
 
