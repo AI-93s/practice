@@ -706,3 +706,25 @@
 
 // 0 || "" || 2 || undefined || true || falsе; = 2
 
+// Lesson 028
+
+// const box = document.getElementById('box');
+
+// console.log(box);
+
+// const btns = document.getElementsByTagName('button');
+
+// console.log(btns[0]);
+
+// const circles = document.getElementsByClassName('circle');
+
+// console.log(circles);
+
+// const hearts = document.querySelectorAll();
+
+// hearts.forEach(item => {
+//     console.log(item)
+// });
+
+// const oneHeart = document.querySelector('.heart');
+// console.log(oneHeart);
