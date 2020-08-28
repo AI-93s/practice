@@ -536,16 +536,16 @@
 // let str = "some";
 // let strObj = new String(str);
 
-// console.log(typeof(str));
-// console.log(typeof(strObj));
+// console.log(typeof (str));
+// console.log(typeof (strObj));
 
-// console.dir([1,2,3]);
+// console.dir([1, 2, 3]);
 
 // const solider = {
 //     health: 400,
 //     armor: 100,
-//     sayHello: function() {
-//        console.log("Hello"); 
+//     sayHello: function () {
+//         console.log("Hello");
 //     }
 // };
 
@@ -569,11 +569,13 @@
 //     genres: [],
 //     privat: false,
 //     start: function () {
-//         personaMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//         personaMovieDB.count = +prompt
+// ('Сколько фильмов вы уже посмотрели?', '');
 
 //         while (personaMovieDB.count == '' || personaMovieDB.count == null ||
 //             isNaN(personaMovieDB.count)) {
-//             personaMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//             personaMovieDB.count = +prompt
+// ('Сколько фильмов вы уже посмотрели?', '');
 //         }
 //     },
 //     rememberMyFilms: function () {
@@ -634,12 +636,12 @@
 
 // Lesson 026
 
-// //1
-// console.log(typeof(String(null)));
-// console.log(typeof(String(4)));
+// 1
+// console.log(typeof (String(null)));
+// console.log(typeof (String(4)));
 
-// //2
-// console.log(typeof(5 + ''));
+// 2
+// console.log(typeof (5 + ''));
 
 // const num = 5;
 
@@ -647,20 +649,20 @@
 
 // const fontSize = 26 + 'px';
 
-// //1
-// console.log(typeof(Number('4')));
+// 1
+// console.log(typeof (Number('4')));
 
-// //2
-// console.log(typeof(+'5'));
+// 2
+// console.log(typeof (+'5'));
 
-// //3
-// console.log(typeof(parseInt("15px", 10)));
+// 3
+// console.log(typeof (parseInt("15px", 10)));
 
 // let answ = +prompt("Hello", "");
 
-// //1
+// 1
 
-// // 0, '', null, undefined, NaN;
+// 0, '', null, undefined, NaN;
 
 // let switcher = null;
 
@@ -674,35 +676,39 @@
 //     console.log('Working...');
 // }
 
-// //2
-// console.log(typeof(Boolean('4')));
+// 2
+// console.log(typeof (Boolean('4')));
 
-// //3
-// console.log(typeof(!!"ssss"));
+// 3
+// console.log(typeof (!!"ssss"));
 
 // Lesson 027
 
-// let x = 5; alert( x++ ); = 5
+// let x = 5;
+// alert(x++); = 5
 
-// [] + false - null + true; = NaN
+//     [] + false - null + true; = NaN
 
-// let y = 1; let x = y = 2; alert(x); = 2
+// let y = 1;
+// let x = y = 2;
+// alert(x); = 2
 
-// [] + 1 + 2; = "12"
+//     [] + 1 + 2; = "12"
 
-// alert( "1"[0] ); = "1"
+// alert("1" [0]); = "1"
 
 // 2 && 1 && null && 0 && undefined; = null
 
-// !!( a && b ) и (a && b); = false
+//     !!(a && b) и(a && b); = false
 
-// alert( null || 2 && 3 || 4 ); = 3
+// alert(null || 2 && 3 || 4); = 3
 
-// a = [1, 2, 3]; b = [1, 2, 3]; = false
+// a = [1, 2, 3];
+// b = [1, 2, 3]; = false
 
-// alert( +"Infinity" ); = Infinity
+// alert(+"Infinity"); = Infinity
 
-// "Ёжик" > "яблоко"; = false
+//     "Ёжик" > "яблоко"; = false
 
 // 0 || "" || 2 || undefined || true || falsе; = 2
 
@@ -728,3 +734,58 @@
 
 // const oneHeart = document.querySelector('.heart');
 // console.log(oneHeart);
+
+// Lesson 029
+
+// const box = document.getElementById('box'),
+//     btns = document.getElementsByTagName('button'),
+//     circles = document.getElementsByClassName('circle'),
+//     hearts = document.querySelectorAll('.heart'),
+//     oneHeart = document.querySelector('.heart'),
+//     wrapper = document.querySelector('.wrapper');
+
+// box.style.backgroundColor = 'blue';
+// box.style.width = '500px';
+
+// box.style.cssText = `background-color: blue; width: 500px`;
+
+// btns[1].style.borderRadius = '100%';
+// circles[0].style.backgroundColor = 'red';
+
+// for (let i = 0; i < hearts.length; i++) {
+//     hearts[i].style.backgroundColor = 'blue';
+// }
+
+// hearts.forEach(item => {
+//     item.style.backgroundColor = 'blue';
+// });
+
+// const div = document.createElement('div');
+// const text = document.createTextNode('Тут был я');
+
+// div.classList.add('black');
+
+// document.body.append(div);
+
+// wrapper.append(div);
+// wrapper.appendChild(div);
+
+// wrapper.prepend(div);
+
+// hearts[0].before(div);
+
+// hearts[0].after(div);
+
+// wrapper.insertBefore(div, hearts[1]);
+
+// circles[0].remove();
+// wrapper.removeChild(hearts[1]);
+
+// hearts[0].replaceWith(circles[0]);
+// wrapper.replaceChild(circles[0], hearts[0]);
+
+// div.innerHTML = "<h1>Hellow World</h1>";
+
+// div.textContent = "Hello";
+
+// div.insertAdjacentHTML("", '<h2>Hello</h2>');
