@@ -894,3 +894,130 @@
 
 // loadScript("js/test.js");
 // loadScript("js/some.js");
+
+// Lesson 037
+
+// const btns = document.querySelectorAll('button'),
+//     wrapper = document.querySelector('.btn-block');
+
+// console.log(btns[0].classList.length);
+// console.log(btns[0].classList.item(1));
+// console.log(btns[1].classList.add('red'));
+// console.log(btns[0].classList.remove('blue'));
+// console.log(btns[0].classList.toggle('blue'));
+
+// if (btns[1].classList.contains('red')) {
+//     console.log('red');
+// }
+
+// btns[0].addEventListener('click', () => {
+// if (!btns[1].classList.contains('red')) {
+//     btns[1].classList.add('red');
+// } else {
+//     btns[1].classList.remove('red');
+// }
+
+//     btns[1].classList.toggle('red');
+// });
+
+// console.log(btns[0].className);
+
+// wrapper.addEventListener('click', (event) => {
+//     if (event.target && event.target.matches("button.red")) {
+//         console.log('Hello');
+//     }
+// });
+
+// btns.forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         console.log('Hello');
+//     });
+// });
+
+// const btn = document.createElement('button');
+// btn.classList.add('red');
+// wrapper.append(btn);
+
+// Lesson 040
+
+// const now = new Date('2020-05-01');
+// new Date.parse('2020-05-01'); 
+
+// console.log(now.setHours(40));
+// console.log(now);
+
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getUTCHours());
+
+// console.log(now.getTimezoneOffset());
+// console.log(now.getTime());
+
+// let start = new Date();
+
+// for (let i = 0; i < 100000; i++){
+//     let some = i ** 3;
+// }
+
+// let end = new Date();
+
+// alert(`Цикл отработал за ${end - start} миллисикунд`);
+
+// Lesson 042
+
+// const box = document.querySelector('.box'),
+//     btn = document.querySelector('button');
+
+// const width = box.clientWidth;
+// const height = box.clientHeight;
+
+// const width = box.offsetWidth;
+// const height = box.offsetHeight;
+
+// const width = box.scrollWidth;
+// const height = box.scrollHeight;
+
+// console.log(width, height);
+
+// btn.addEventListener('click', () => {
+//     box.style.height = box.scrollHeight + 'px';
+//     console.log(box.scrollTop);
+// });
+
+// console.log(box.getBoundingClientRect().top);
+
+// const style = window.getComputedStyle(box);
+
+// console.log(style.display);
+
+// console.log(document.documentElement.scrollTop);
+
+// Lesson 045
+
+// function User(name, id) {
+//     this.name = name;
+//     this.id = id;
+//     this.human = true;
+//     this.hello = function () {
+//         console.log(`Hello ${this.name}`);
+//     };
+// }
+
+// User.prototype.exit = function (name) {
+//     console.log(`Пользователь ${this.name} ушел`);
+// };
+
+// const ivan = new User('Ivan', 28);
+// const alex = new User('Alex', 20);
+
+// ivan.exit();
+
+// ivan.hello();
+// alex.hello();
+
+// console.log(ivan);
+// console.log(alex);
+
+// Lesson 046
